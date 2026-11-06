@@ -1,0 +1,10 @@
+name: ce_records_kit
+title: CE Records Kit
+description: Keep continuing-education records renewal-ready across one or more licenses: verified per-license requirements worksheets, a certificate-based course tracker, reconciliation against the official reporting system (CE Broker or equivalent) entering only missing courses, and per-category status reports. The agent never attests or submits a renewal. Use when a colleague wants to set up or clean up their CE tracking.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

@@ -32,3 +32,7 @@ Your agent will produce paste-ready Apps Script projects plus the sheet, and wal
 - The directory holds **professional, public-facing information only** — names, credentials, locations, services, websites, photos. Never put client information in it.
 - Only list a colleague **with their knowledge**. The add forms state this; your admin reviews every submission email before treating a listing as settled.
 - This is a directory of *recommendations*, not a credentialing or endorsement verification system. Say what a listing means on your site ("colleagues our clinicians know and refer to") and nothing stronger.
+
+## Downloading this skill as a zip
+
+GitHub has no per-folder download button. To get just this folder as a zip: copy this folder's address — `https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice/tree/main/referral-network-kit` — paste it into [download-directory.github.io](https://download-directory.github.io/), and download the zip it creates. (Or download the whole repository from its front page: green **Code** button → **Download ZIP**, and keep just this folder.) Unzip it and hand the whole folder to your AI agent.

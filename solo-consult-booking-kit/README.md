@@ -94,3 +94,7 @@ developer or a technically confident colleague as a build brief.
   trackers on the booking page.
 - Not a substitute for your HIPAA policies, training, risk analysis,
   or Notice of Privacy Practices.
+
+## Downloading this skill as a zip
+
+GitHub has no per-folder download button. To get just this folder as a zip: copy this folder's address — `https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice/tree/main/solo-consult-booking-kit` — paste it into [download-directory.github.io](https://download-directory.github.io/), and download the zip it creates. (Or download the whole repository from its front page: green **Code** button → **Download ZIP**, and keep just this folder.) Unzip it and hand the whole folder to your AI agent.

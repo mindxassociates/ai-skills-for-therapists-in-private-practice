@@ -4,6 +4,18 @@ A collection of reusable AI-agent skills built for therapists in solo and group 
 
 No practice data from any real practice is included. Every skill was scrubbed before publishing: no names, emails, account IDs, fees, or client information.
 
+## Downloading a skill (zip)
+
+**The whole collection:** on this page, click the green **Code** button → **Download ZIP**. Unzip it — every folder inside is one complete skill.
+
+**Just one skill:** GitHub doesn't offer a per-folder download button, so use one of these:
+
+1. **Easiest — a folder-download helper:** open the skill's folder (links in the table below), copy its address from your browser's address bar, paste it into [download-directory.github.io](https://download-directory.github.io/), and it hands you a zip of just that folder.
+2. **With Git:** `git clone https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice.git` — then copy out the one folder you need and delete the rest.
+3. **Ask your AI agent:** paste the skill folder's GitHub link to your agent and say "download this folder as a zip" — most coding agents can fetch it for you.
+
+Then hand the **unzipped folder** (all of its files, including the `references` subfolder) to your AI agent — see "How to use a skill" below.
+
 ## The skills
 
 | Skill | What it does |
@@ -11,8 +23,11 @@ No practice data from any real practice is included. Every skill was scrubbed be
 | [Solo Consult Booking Kit](solo-consult-booking-kit/) | Builds a HIPAA-supporting initial-consultation booking system for a **solo** practice on Google Workspace + Apps Script — public booking page, availability management, and a consult console, with no monthly booking-platform fee. Start with its `README.md`, or paste its `PROMPT.md` into your agent. |
 | [Group Consult Booking Kit](group-consult-booking-kit/) | The **group practice** edition of the booking system: one public booking page that routes prospective clients to the right clinician by license state, insurance panel, language, and age group, plus provider self-service apps and an admin console. Start with its `README.md` or `PROMPT.md`. |
 | [Practice Books Kit](practice-books-kit/) | Bookkeeping + payroll for a therapy practice: feed your agent your bank/card statements, and it categorizes every transaction into a therapist-specific chart of categories, builds a monthly P&L spreadsheet, and specifies a visual finances + payroll app your agent can build for you. |
+| [Practice CRM Kit](practice-crm-kit/) | A lead-tracking CRM for a therapy practice: pipeline board (New → Started, with honest exits), automatic lead capture from booking, outcome forms, website forms, and hourly inbox ingest, follow-ups on each lead, and group-practice roles — admin sees all, providers see only their own leads with Notes stripped server-side. No clinical notes, no unattended sends. Start with its `README.md` or `PROMPT.md`. |
 | [Therapist ISO Tracker](therapist-iso-tracker/) | Scans the Facebook therapist groups you belong to for "ISO" (in search of) client referral posts, matches them against your profile (state, populations, panels, specialties), and drafts copy-paste replies you post yourself. Strictly read-only — it never posts, comments, or messages on your behalf. Fill in `config.md` and `references/provider-profile.md` first. |
 | [Referral Network Kit](referral-network-kit/) | Builds a living referral directory on Google Workspace + Apps Script: one spreadsheet of recommended colleagues rendered live as a public, searchable directory (photo cards, filters, one-click copy of a provider's details for pasting into a referral), an internal add form for your own clinicians, and an optional public "get recommended" form — with duplicate protection and an admin email on every submission. Start with its `README.md` or `PROMPT.md`. |
+| [Secure Messages Kit](secure-messages-kit/) | A secure client + external-provider messaging portal you own, instead of a paid subscription: email + 6-digit-code sign-in for clients, name + PIN for providers, participant-scoped externals, content-free notification emails, validated unshared attachments, and a hash-chained audit log — with the limits stated honestly (not end-to-end encrypted; practice admin can access messages). Start with its `README.md` or `PROMPT.md`. |
+| [CE Records Kit](ce-records-kit/) | Keep continuing-education records renewal-ready across one or more licenses: verified per-license requirements worksheets, a certificate-based course tracker, reconciliation against the official reporting system (CE Broker or your state's equivalent) entering only what's missing, and status reports that show each category's deficit separately. The agent never attests or submits a renewal. Start with its `README.md` or `PROMPT.md`. |
 | [Insurance Payer Credentialing](insurance-payer-credentialing/) | A repeatable, auditable workflow for credentialing providers directly with insurance payers and EAPs: per-provider document checklists, per-payer submission packets, and an outcome log. It prepares submissions only — nothing is ever sent without your explicit approval. |
 
 ## How to use a skill

@@ -1,0 +1,10 @@
+name: practice_crm_kit
+title: Practice CRM Kit
+description: Build a lead-tracking CRM for a therapy practice on Google Workspace + Apps Script + Sheets: pipeline board, automatic lead capture from booking/outcome/forms/inbox, follow-ups on each lead, admin vs provider server-side scoping with Notes stripped for providers, no clinical notes and no unattended sends. Use when a colleague in private practice wants a CRM like this for their own practice.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

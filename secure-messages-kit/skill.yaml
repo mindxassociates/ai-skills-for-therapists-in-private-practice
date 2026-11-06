@@ -1,0 +1,10 @@
+name: secure_messages_kit
+title: Secure Messages Kit
+description: Build a secure client-messaging portal for a therapy practice on Google Workspace + Apps Script + Sheets + Drive: clients sign in with email + 6-digit code, providers with name + PIN, externals participant-scoped; content-free notification emails, validated unshared attachments, hash-chained audit log, honest not-end-to-end-encrypted limits. Use when a colleague in private practice wants a messaging portal like this instead of a paid subscription.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
