@@ -1,5 +1,7 @@
 # AI Skills for Therapists in Private Practice
 
+English | [中文版](README.zh.md)
+
 A collection of reusable AI-agent skills built for therapists in solo and group private practice. Each skill is a self-contained folder you can hand to your own AI agent (Muse, ChatGPT, or any agent that can read Markdown files) — the agent follows the playbook inside to do the work with your own accounts, your own data, and your own configuration.
 
 No practice data from any real practice is included. Every skill was scrubbed before publishing: no names, emails, account IDs, fees, or client information.
@@ -28,6 +30,7 @@ Then hand the **unzipped folder** (all of its files, including the `references` 
 | [Referral Network Kit](referral-network-kit/) | Builds a living referral directory on Google Workspace + Apps Script: one spreadsheet of recommended colleagues rendered live as a public, searchable directory (photo cards, filters, one-click copy of a provider's details for pasting into a referral), an internal add form for your own clinicians, and an optional public "get recommended" form — with duplicate protection and an admin email on every submission. Start with its `README.md` or `PROMPT.md`. |
 | [Secure Messages Kit](secure-messages-kit/) | A secure client + external-provider messaging portal you own, instead of a paid subscription: email + 6-digit-code sign-in for clients, name + PIN for providers, participant-scoped externals, content-free notification emails, validated unshared attachments, and a hash-chained audit log — with the limits stated honestly (not end-to-end encrypted; practice admin can access messages). Start with its `README.md` or `PROMPT.md`. |
 | [CE Records Kit](ce-records-kit/) | Keep continuing-education records renewal-ready across one or more licenses: verified per-license requirements worksheets, a certificate-based course tracker, reconciliation against the official reporting system (CE Broker or your state's equivalent) entering only what's missing, and status reports that show each category's deficit separately. The agent never attests or submits a renewal. Start with its `README.md` or `PROMPT.md`. |
+| [Practice Website Kit](practice-website-kit/) | Build a practice website with **Astro + PagesCMS + Cloudflare Pages**: a fast static site (home, provider profiles, services, fees, FAQs, blog/resources) edited through web forms instead of code, hosted free on your own domain — with booking/directories embedded from your existing systems, structured data and llms.txt, and the crisis line on every contact path. Start with its `README.md` or `PROMPT.md`. |
 | [Insurance Payer Credentialing](insurance-payer-credentialing/) | A repeatable, auditable workflow for credentialing providers directly with insurance payers and EAPs: per-provider document checklists, per-payer submission packets, and an outcome log. It prepares submissions only — nothing is ever sent without your explicit approval. |
 
 ## How to use a skill

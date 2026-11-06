@@ -1,0 +1,10 @@
+name: practice_website_kit
+title: Practice Website Kit
+description: Build a private-practice website with Astro (static site from Markdown content collections), PagesCMS (Git-based web-form editing via .pages.yml), and Cloudflare Pages (free hosting on the practice's own domain): practice blueprint pages, iframe embeds for booking/directories, structured data/sitemap/llms.txt, crisis-line and no-clinical-data rules. Use when a colleague wants to build or rebuild their practice website on this stack.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
