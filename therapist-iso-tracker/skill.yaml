@@ -1,0 +1,10 @@
+name: therapist_iso_tracker
+title: Therapist ISO Tracker
+description: Scan your own Facebook therapist groups for client ISO posts (people seeking a therapist) and draft copy-paste referral replies recommending your practice. Use when you ask to check groups for new client referrals, set up recurring ISO scans, or review a draft reply before posting it yourself.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
