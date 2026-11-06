@@ -1,0 +1,10 @@
+name: referral_network_kit
+title: Referral Network Kit
+description: Build a referral network for a therapy practice on Google Workspace + Apps Script + Sheets: a public read-only directory of recommended colleagues rendered live from one spreadsheet, an internal add form for the practice's own clinicians, and an optional public add form for community colleagues. Use when a colleague in private practice wants to build, set up, or adapt a referral directory like this for their own practice.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
