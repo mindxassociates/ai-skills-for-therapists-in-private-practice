@@ -1,0 +1,11 @@
+name: retell_virtual_receptionist_kit
+title: Retell Virtual Receptionist Kit
+description: "Set up a Retell AI virtual receptionist for a solo or group therapy practice: one front-door line, roster-based provider matching, optional multilingual behavior, live consult availability and booking through a secure bridge, structured call-cost logging, privacy and crisis guardrails, free-first testing, and one-route-at-a-time cutover. Use when a colleague wants to build, configure, test, launch, maintain, or troubleshoot a Retell receptionist."
+category: "Work and knowledge"
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
