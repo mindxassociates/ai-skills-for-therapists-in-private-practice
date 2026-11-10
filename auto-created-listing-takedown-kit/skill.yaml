@@ -1,0 +1,11 @@
+name: auto_created_listing_takedown_kit
+title: Auto-Created Listing Takedown Kit
+description: "Find and remove auto-created clinician directory pages you never made: inventory scraped profiles by NPI and legal name, submit removals through each site's own route (including Dr. Leonardo's claim-to-delist flow), open the validation links, file FTC / Google / host / registrar abuse reports for deceptive pages, and run a monthly sweep so removed pages stay removed. For solo and group therapy practices. Use when a colleague wants to check for, remove, or keep watch over unauthorized directory profiles."
+category: "Work and knowledge"
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

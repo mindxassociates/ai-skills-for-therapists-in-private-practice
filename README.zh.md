@@ -31,6 +31,7 @@
 | [Secure Messages Kit](secure-messages-kit/)（安全消息门户） | 一套归你自己所有的安全消息门户，替代按月付费的安全通讯订阅：来访者用邮箱 + 6 位验证码登录，从业者用姓名 + PIN 码登录，外部合作方只能看到自己参与的会话；通知邮件不带任何消息内容；附件经校验后以不共享方式存储；带哈希链审计日志——并且诚实地写明其局限（不是端到端加密；机构管理员可以访问消息内容）。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [CE Records Kit](ce-records-kit/)（继续教育学分记录） | 让继续教育记录在整个续证周期内始终处于可续证状态，适用于持有一个或多个执照的情况：经核实的各执照要求清单、以证书为准的课程跟踪表、与官方上报系统（如 CE Broker 或你所在州的对应系统）对账并只补录缺失课程、按类别分别呈现缺口的状态报告。智能体永远不会替你作出声明（attestation）或提交续证。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Practice Website Kit](practice-website-kit/)（机构网站） | 用 **Astro + PagesCMS + Cloudflare Pages** 搭建机构网站：快速的静态网站（首页、咨询师介绍、服务、收费、常见问题、博客/资源），通过网页表单而不是改代码来编辑内容，免费托管在你自己的域名下——预约、目录等功能以嵌入方式接入你现有的系统，带结构化数据和 llms.txt，每条联系路径上都有危机热线。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Auto-Created Listing Takedown Kit](auto-created-listing-takedown-kit/)（自动生成黄页条目下架工具包） | 查找并移除**你从未创建过的黄页条目**：一些网站抓取 NPPES 公开注册数据，自动生成咨询师主页——有时甚至是整站的小型网站——并编造营业时间、错误的专业方向和虚假预约按钮。内容包括按 NPI 和法定姓名盘点、逐站下架手册（包括 Dr. Leonardo 的“认领以下架”流程）、验证链接的完成纪律、向 FTC / Google / 主机商 / 注册商提交滥用举报，以及每月自动巡查，让已下架的页面不再复活。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Retell Virtual Receptionist Kit](retell-virtual-receptionist-kit/)（AI 电话接待员） | 为个人或团体执业机构搭建 **Retell AI 电话接待员**：一条总机线路，按咨询师名册进行匹配，可选多语言，通过安全桥接连接你自己的预约系统，实时查询空档并完成预约；带结构化通话成本记录、隐私与危机处理护栏、先用免费方式充分测试，再逐条线路切换目录或总机号码。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Insurance Payer Credentialing](insurance-payer-credentialing/)（保险签约准入） | 一套可重复、可审计的工作流程，用于直接与保险公司和 EAP 签约准入：每位从业者的材料清单、按支付方分别准备的提交资料包、结果记录。它只负责准备提交——未经你的明确批准，什么都不会发送。 |
 
