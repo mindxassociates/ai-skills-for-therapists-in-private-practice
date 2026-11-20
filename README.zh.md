@@ -2,9 +2,23 @@
 
 [English](README.md) | 中文版
 
-这是一套为个人执业和团体执业的心理咨询师准备的、可复用的 AI 智能体技能（skills）。每个技能都是一个独立的文件夹，你可以把它交给自己的 AI 智能体（Muse、ChatGPT，或任何能读取 Markdown 文件的智能体）——智能体会按照文件夹里的操作手册，用你自己的账号、你自己的数据、你自己的配置来完成工作。
+这是一套为个人执业和团体执业的心理咨询师准备的、可复用的 AI 智能体技能（skills），共 18 个。每个技能都是一个独立的文件夹，你可以把它交给自己的 AI 智能体（Muse、ChatGPT，或任何能读取 Markdown 文件的智能体）——智能体会按照文件夹里的操作手册，用你自己的账号、你自己的数据、你自己的配置来完成工作。
 
 本仓库不包含任何真实机构的经营数据。每个技能发布前都经过脱敏处理：没有姓名、邮箱、账号 ID、收费标准，也没有任何来访者信息。
+
+## 最快的使用方式：把本仓库链接粘贴给你的 AI 智能体
+
+你不需要自己下载任何文件。**复制本仓库链接 `https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice`，粘贴给你的 AI 智能体，并告诉它你想用哪个技能**，例如：
+
+> “用这个仓库里的 Solo Consult Booking Kit（个人执业版初步咨询预约）帮我搭建预约系统：https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice”
+
+有能力的智能体会自己抓取技能、阅读其中的 `SKILL.md`、和你完成设置访谈，然后动手搭建。下面的下载方式适用于智能体无法抓取链接、或你更愿意自己处理文件的情况。
+
+## 免费自助使用 —— 也可以付费请人安装
+
+本仓库的每个技能都可以**免费**自助使用，没有期限。技能本身就是写给 AI 智能体带你一步步完成的。
+
+如果你不想自己动手，也可以付费请开发这套技能的机构团队**亲手为你安装**：在你自己的账号里、按你自己的配置完成搭建，测试通过后交付给你使用。费用取决于你选择的技能和机构规模——请加入 [Mind X社区](https://community.mindx.us/)，或通过 [mindx.us](https://mindx.us/) 联系我们，了解安装服务。
 
 ## 如何下载某个技能（zip 压缩包）
 
@@ -33,12 +47,18 @@
 | [Practice Website Kit](practice-website-kit/)（机构网站） | 用 **Astro + PagesCMS + Cloudflare Pages** 搭建机构网站：快速的静态网站（首页、咨询师介绍、服务、收费、常见问题、博客/资源），通过网页表单而不是改代码来编辑内容，免费托管在你自己的域名下——预约、目录等功能以嵌入方式接入你现有的系统，带结构化数据和 llms.txt，每条联系路径上都有危机热线。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Auto-Created Listing Takedown Kit](auto-created-listing-takedown-kit/)（自动生成黄页条目下架工具包） | 查找并移除**你从未创建过的黄页条目**：一些网站抓取 NPPES 公开注册数据，自动生成咨询师主页——有时甚至是整站的小型网站——并编造营业时间、错误的专业方向和虚假预约按钮。内容包括按 NPI 和法定姓名盘点、逐站下架手册（包括 Dr. Leonardo 的“认领以下架”流程）、验证链接的完成纪律、向 FTC / Google / 主机商 / 注册商提交滥用举报，以及每月自动巡查，让已下架的页面不再复活。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Retell Virtual Receptionist Kit](retell-virtual-receptionist-kit/)（AI 电话接待员） | 为个人或团体执业机构搭建 **Retell AI 电话接待员**：一条总机线路，按咨询师名册进行匹配，可选多语言，通过安全桥接连接你自己的预约系统，实时查询空档并完成预约；带结构化通话成本记录、隐私与危机处理护栏、先用免费方式充分测试，再逐条线路切换目录或总机号码。从 `README.md` 或 `PROMPT.md` 开始。 |
-| [Insurance Payer Credentialing](insurance-payer-credentialing/)（保险签约准入） | 一套可重复、可审计的工作流程，用于直接与保险公司和 EAP 签约准入：每位从业者的材料清单、按支付方分别准备的提交资料包、结果记录。它只负责准备提交——未经你的明确批准，什么都不会发送。 |
+| [Insurance Payer Credentialing](insurance-payer-credentialing/)（保险签约准入） | 一套可重复、可审计的工作流程，用于直接与保险公司和 EAP 签约准入：每位从业者的材料清单、按支付方分别准备的提交资料包、结果记录——并把团体签约状态与个人准入状态分开记录，绝不把团体合同误认为某位咨询师已经获准。它只负责准备提交——未经你的明确批准，什么都不会发送。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Practice Chatbot Kit](practice-chatbot-kit/)（机构网站智能客服） | 为你的网站搭建双语的机构协调员聊天机器人：先按执业州匹配，再按专长、保险、语言和年龄组匹配；把匹配成功的访客引导到你自己的预约链接；只根据你自己的帮助中心内容回答常见问题；收费与保险问题一律转人工，绝不引用未公开的收费；访客透露危机情况时，停止预约流程并提供 988 危机资源。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Snoooz Inbox Automation Kit](snoooz-inbox-automation-kit/)（Snoooz 邮箱自动化） | 为个人或小型执业机构设置 Snoooz.ai 邮箱自动化：黄页与 Psychology Today 咨询邮件的自动回复，按年龄、来访者类型、保险、所在地、危机情况、形式和收费逐项把关；EAP 咨询处理；现有来访者与账单问题的分流；标签与排除规则——附空白配置模板，并要求在任何邮件自动发送前先通过模拟测试。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Brilliant Directories Publishing Kit](brilliant-directories-publishing-kit/)（Brilliant Directories 黄页发布） | 在 Brilliant Directories 上创建、改版和修复黄页/SEO 页面而不翻车：先隐藏再创建；正文只能从已排版的源文件整段替换，绝不改写转述；对咨询师卡片、结构化数据和 hreflang 做精确的线上核验；以及 noindex 陷阱的正确处理顺序——先公开、再取消勾选 NoIndex、刷新站点、核验线上 robots 标签后再申请收录。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Client Tool Publishing Kit](client-tool-publishing-kit/)（来访者工具发布） | 把双语互动来访者工具（练习册、追踪表、心理教育工具）从 zip 文件部署到你自己域名下的 GitHub Pages，挑选无版权问题的封面图，并登记到你的工具索引表格的双语页签中——分享前先核验两个线上链接都可正常打开。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Apps Script Deploy Kit](apps-script-deploy-kit/)（Apps Script 接口部署） | 用你自己的 OAuth 客户端通过 Apps Script 接口部署 Google Apps Script 网页应用，不再往编辑器里粘贴代码：推送准确的文件、回读核对、创建版本、升级**现有**部署（绝不生成新链接），并从线上页面验证。其他工具包的应用都靠它部署。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Apps Script Build Checklist Kit](apps-script-build-checklist-kit/)（Apps Script 搭建检查清单） | 一份上线前检查清单，收录 Apps Script 在真实运行中最容易出事的缺陷：清单文件里的邮件权限范围、与浏览器全局变量重名的顶层变量、PIN 验证契约不一致、表单部分保存丢数据、用显示名而不是稳定 ID 关联记录、电子表格时区导致时间戳偏移——每项都给出修复方法和最终巡查步骤。从 `README.md` 或 `PROMPT.md` 开始。 |
 
 ## 如何使用技能
 
-1. **选一个技能文件夹**——不需要下载整个仓库。
-2. **把整个文件夹交给你的 AI 智能体：**
+1. **选一个技能**——不需要下载整个仓库。
+2. **最快：把本仓库链接粘贴给你的 AI 智能体**并说出技能名称（见本页顶部）。也可以把整个文件夹交给你的智能体：
    - 支持原生技能的智能体：把文件夹安装/复制为一个技能。
    - 编程工作区类智能体：把文件夹放进你的工作区，让智能体读取其中的 `SKILL.md`。
    - 纯聊天类智能体：把文件夹里的全部 `.md` 文件上传，并使用起始提示词（各工具包内附有现成的 `PROMPT.md`）。

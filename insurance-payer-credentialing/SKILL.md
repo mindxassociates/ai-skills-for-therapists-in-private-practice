@@ -25,6 +25,15 @@ Help a solo or group practice credential providers directly with insurance payer
 5. **Submit only after explicit approval.** After approval, submit/send and capture the observed result (confirmation page, sent-mail record, reference number, or blocker).
 6. **Log the outcome.** Record date, provider, payer, confirmation/evidence, or the exact blocker. Keep provider names; never retain client PHI.
 
+## Verify group and individual status separately
+
+- Treat a group contract approval and an individual provider credentialing as two separate statuses.
+- Record the group NPI and each provider's individual NPI in separate fields and never use one to prove the other.
+- Check a payer portal or Availity lookup with the individual NPI when the question is whether that provider is credentialed.
+- Treat a check that uses the group NPI as evidence about the group only.
+- Mark a provider Active only when the payer confirms that individual provider by name and individual NPI, or by a welcome or activation notice for that provider.
+- Keep a provider at In Progress when the group contract is approved but that provider's individual credentialing is still pending, and name the pending individual step in the outcome log.
+
 ## Payer workflows
 
 ### CuraLinc Healthcare (EAP) — online intake
@@ -55,6 +64,7 @@ Help a solo or group practice credential providers directly with insurance payer
 - Subject: provider application naming the clinician.
 - Attachments: completed payer application/info page, resume/CV, professional liability COI, license proof for every applicable state.
 - Body: brief cover note identifying the clinician and practice, listing attachments, and inviting requests for additional information.
+- Before concluding whether a clinician type is eligible, search the practice mailbox for the payer's own correspondence on that question and quote what it says in the packet. A signed agreement may be silent on a question (for example, supervised clinicians) while a provider guide states a stricter rule — a provider-relations email answer governs when it conflicts with the guide. Record the sender and date of the message relied on.
 
 ## Output Contract
 For each provider × payer submission, produce:
@@ -69,6 +79,8 @@ For each provider × payer submission, produce:
 4. Keep provider and practice data; never retain client PHI.
 5. If a payer's published route, recipient, or requirement has changed, confirm it before proceeding; do not reuse stale instructions.
 6. Prefer primary payer sources (payer portal, published instructions, payer emails) over summaries.
+7. Never record an individual provider as credentialed on group-contract or group-NPI evidence alone.
+8. Search payer correspondence before concluding eligibility from a contract or guide alone. A payer representative's written email answer governs when it conflicts with a guide summary. Record the sender and date of the message relied on.
 ## Available connectors
 
 Use `muse.connector_search` to find the current connector docs before following

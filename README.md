@@ -2,9 +2,23 @@
 
 English | [中文版](README.zh.md)
 
-A collection of reusable AI-agent skills built for therapists in solo and group private practice. Each skill is a self-contained folder you can hand to your own AI agent (Muse, ChatGPT, or any agent that can read Markdown files) — the agent follows the playbook inside to do the work with your own accounts, your own data, and your own configuration.
+A collection of 18 reusable AI-agent skills built for therapists in solo and group private practice. Each skill is a self-contained folder you can hand to your own AI agent (Muse, ChatGPT, or any agent that can read Markdown files) — the agent follows the playbook inside to do the work with your own accounts, your own data, and your own configuration.
 
 No practice data from any real practice is included. Every skill was scrubbed before publishing: no names, emails, account IDs, fees, or client information.
+
+## The fastest way to use a skill: paste this repo's link to your AI agent
+
+You don't need to download anything yourself. **Copy this repository's link — `https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice` — paste it to your AI agent, and tell it which skill you want**, for example:
+
+> "Use the Solo Consult Booking Kit from this repository to build my booking system: https://github.com/mindxassociates/ai-skills-for-therapists-in-private-practice"
+
+A capable agent will fetch the skill, read its `SKILL.md`, run its setup interview with you, and do the work. The download routes below are there if your agent can't fetch links, or you prefer to handle the files yourself.
+
+## Free to DIY — or have it installed for you
+
+Every skill in this repository is **free** to use yourself, for as long as you like. They are written so a capable AI agent can walk you through the whole build.
+
+If you'd rather not do it yourself, **hands-on installation is available for a fee** from the practice that built these skills: we set the system up in your own accounts, with your own configuration, and hand it over working and tested. Pricing depends on which skills you want and the size of your practice — join [Community by Mind X Associates](https://community.mindx.us/) or reach out through [mindx.us](https://mindx.us/) and ask about installation.
 
 ## Downloading a skill (zip)
 
@@ -33,12 +47,18 @@ Then hand the **unzipped folder** (all of its files, including the `references` 
 | [Practice Website Kit](practice-website-kit/) | Build a practice website with **Astro + PagesCMS + Cloudflare Pages**: a fast static site (home, provider profiles, services, fees, FAQs, blog/resources) edited through web forms instead of code, hosted free on your own domain — with booking/directories embedded from your existing systems, structured data and llms.txt, and the crisis line on every contact path. Start with its `README.md` or `PROMPT.md`. |
 | [Retell Virtual Receptionist Kit](retell-virtual-receptionist-kit/) | Set up a **Retell AI phone receptionist** for a solo or group practice: one front-door line, roster-based clinician matching, optional multilingual behavior, live consult availability and booking through a secure bridge to your own booking system, structured call-cost logging, privacy and crisis guardrails, free-first testing, and one-route-at-a-time cutover for directory and main-line numbers. Start with its `README.md` or `PROMPT.md`. |
 | [Auto-Created Listing Takedown Kit](auto-created-listing-takedown-kit/) | Find and remove **directory pages you never created**: sites scrape the NPPES registry and auto-publish profiles — sometimes whole mini-websites — with assumed office hours, wrong specialties, and fake appointment widgets. Covers inventory by NPI and legal name, per-site removal playbooks (including Dr. Leonardo's claim-to-delist flow), validation-link discipline, FTC / Google / host / registrar abuse reports, and a monthly sweep so removed pages stay removed. Start with its `README.md` or `PROMPT.md`. |
-| [Insurance Payer Credentialing](insurance-payer-credentialing/) | A repeatable, auditable workflow for credentialing providers directly with insurance payers and EAPs: per-provider document checklists, per-payer submission packets, and an outcome log. It prepares submissions only — nothing is ever sent without your explicit approval. |
+| [Insurance Payer Credentialing](insurance-payer-credentialing/) | A repeatable, auditable workflow for credentialing providers directly with insurance payers and EAPs: per-provider document checklists, per-payer submission packets, and an outcome log — with group-vs-individual status tracked separately, so a group contract is never mistaken for a credentialed provider. It prepares submissions only — nothing is ever sent without your explicit approval. Start with its `README.md` or `PROMPT.md`. |
+| [Practice Chatbot Kit](practice-chatbot-kit/) | Build a bilingual practice-coordinator chatbot for your website: matches visitors to providers by license state first, then specialty, panel, language and age; guides matched visitors to your own booking link; answers FAQs from your own help-center content; routes billing questions to a human without quoting unpublished fees; and stops booking to give 988 crisis resources when a visitor discloses crisis. Start with its `README.md` or `PROMPT.md`. |
+| [Snoooz Inbox Automation Kit](snoooz-inbox-automation-kit/) | Set up Snoooz.ai email automation for a solo or small practice: directory and Psychology Today inquiry replies gated on age, client type, insurance, location, crisis, format and fees; EAP inquiry handling; existing-client and billing routing; labels and exclusions — with blank config templates and a simulation battery before anything sends. Start with its `README.md` or `PROMPT.md`. |
+| [Brilliant Directories Publishing Kit](brilliant-directories-publishing-kit/) | Create, restyle and repair Brilliant Directories directory/SEO pages without the usual disasters: hidden-first creation, wholesale body replacement from your styled source file (never a paraphrase), exact live verification of provider cards, schema and hreflang, and the noindex trap — flip public, uncheck NoIndex, refresh, and verify the live robots meta before requesting indexing. Start with its `README.md` or `PROMPT.md`. |
+| [Client Tool Publishing Kit](client-tool-publishing-kit/) | Deploy a bilingual interactive client tool (worksheets, trackers, psychoeducation tools) from a zip to GitHub Pages on your own domain, pick a copyright-free cover photo, and list it in your tools index spreadsheet in both languages — with both live URLs verified before you share them. Start with its `README.md` or `PROMPT.md`. |
+| [Apps Script Deploy Kit](apps-script-deploy-kit/) | Deploy Google Apps Script web apps through the Apps Script API with your own OAuth client instead of pasting code into the editor: push exact files, read back, create a version, bump the *existing* deployment (never mint a new URL), and verify from the served page. The engine room behind the other kits' apps. Start with its `README.md` or `PROMPT.md`. |
+| [Apps Script Build Checklist Kit](apps-script-build-checklist-kit/) | A pre-deploy checklist of the Apps Script defects that actually bite in production: manifest mail scopes, browser-global variable collisions, PIN-gate contract mismatches, forms that lose work on partial save, records joined by display name instead of stable ID, and spreadsheet-timezone timestamp shifts — each with its fix and a final sweep. Start with its `README.md` or `PROMPT.md`. |
 
 ## How to use a skill
 
-1. **Pick one skill folder** — you don't need the whole repository.
-2. **Give the whole folder to your AI agent:**
+1. **Pick one skill** — you don't need the whole repository.
+2. **Fastest: paste this repository's link to your AI agent** and name the skill (see the top of this page). Or give the whole folder to your agent:
    - Agent with native skill support: install/copy the folder as a skill.
    - Coding-workspace agent: drop the folder into your workspace and point the agent at its `SKILL.md`.
    - Chat-only agent: upload all of the folder's `.md` files and use the starter prompt (the booking kits include a ready-made `PROMPT.md`).

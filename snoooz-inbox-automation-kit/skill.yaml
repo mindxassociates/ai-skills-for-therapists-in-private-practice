@@ -1,0 +1,11 @@
+name: snoooz_inbox_automation_kit
+title: Snoooz Inbox Automation Kit
+description: "Set up Snoooz.ai email automation for a solo or small therapy practice, adapted from a group-practice pattern: directory and Psychology Today inquiry replies gated on age, client type, insurance/panels, location/license state, crisis, format, and fees/sliding-scale floor; EAP referral and draft-only availability handling; existing-client and billing routing; exclusions and labels; and optional Google Voice text and vacation templates, off by default. Use when a colleague wants to build, check, update, or troubleshoot Snoooz rules for their own practice."
+category: "Work and knowledge"
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

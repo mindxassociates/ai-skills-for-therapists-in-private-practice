@@ -1,0 +1,11 @@
+name: practice_chatbot_kit
+title: Practice Chatbot Kit
+description: "Build a practice-coordinator chatbot for a solo or group therapy practice website: a bilingual (adaptable to any language pair) persona that matches visitors to providers by license state first, then specialty, panel, language, and age group; books free initial consultations through the practice's own booking link; answers FAQs from the practice's help center; routes billing and insurance questions to the billing contact without quoting unpublished fees; and responds to crisis disclosures with 988 (US) resources. Use when a colleague wants to create, configure, export, maintain, or troubleshoot a practice chatbot persona."
+category: "Work and knowledge"
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

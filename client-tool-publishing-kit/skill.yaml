@@ -1,0 +1,10 @@
+name: client_tool_publishing_kit
+title: Client Tool Publishing Kit
+description: Deploy a bilingual (English + a second language) interactive client tool from a zip (index.html + translated folder) to GitHub Pages under your own GitHub owner and custom projects domain, pick a copyright-free cover photo (Pexels/Unsplash), list it in your Client Tools spreadsheet with one row per language, and verify both live URLs return 200 and the cover returns an image. Use when a colleague sends a tool zip and says 'deploy this' or asks to publish a client tool.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true

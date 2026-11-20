@@ -1,0 +1,7 @@
+name: apps_script_build_checklist_kit
+title: Apps Script Build Checklist Kit
+description: Pre-deploy build checklist for Google Apps Script web apps, distilled from recurring shipped defects — manifest scopes including the MailApp send_mail trap, top-level variables colliding with browser globals like history, PIN-gate argument-shape and hash contract mismatches, forms that lose work on partial save, records joined by display name instead of a stable ID, buttons with no busy feedback or no restore on failure, missing triggers, HtmlService doGet failures, and spreadsheet timezone shifts on timestamps. Use when a colleague is building or reviewing an Apps Script web app and wants the expensive lessons applied before deploy.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false

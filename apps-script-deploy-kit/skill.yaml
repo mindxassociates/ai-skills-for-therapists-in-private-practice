@@ -1,0 +1,7 @@
+name: apps_script_deploy_kit
+title: Apps Script Deploy Kit
+description: Deploy Google Apps Script web apps through the Apps Script API with your own OAuth client instead of editor paste — push the exact tested files via projects.updateContent, read back before versioning, bump the existing deployment (never mint a new URL), verify from the served /exec URL, and pace deploys. Includes setting up your own Internal-consent deployer OAuth client and keeping its credentials private and outside any repo. Use when a colleague wants a repeatable, verifiable deploy route for their Apps Script apps.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false

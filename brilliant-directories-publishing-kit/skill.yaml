@@ -1,0 +1,10 @@
+name: brilliant_directories_publishing_kit
+title: Brilliant Directories Publishing Kit
+description: Create, restyle, and repair Brilliant Directories directory / SEO pages from a styled source file and verify each live page exactly before it goes public — hidden-first creation (Only Allow Members), wholesale body replacement (never paraphrase), batches of at most 2, pre-save sentinel gates, independent live verification (exact provider-card list, at least 3 exact source sentences, hreflang targets character-for-character, structural negatives, SEO meta description, structured-data double-quote trap), the noindex flip-then-uncheck order with a live robots-meta check, an editor-failure stop rule, and a monthly sweep. Use when a colleague publishes directory pages on Brilliant Directories.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
