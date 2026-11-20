@@ -2,7 +2,7 @@
 
 [English](README.md) | 中文版
 
-这是一套为个人执业和团体执业的心理咨询师准备的、可复用的 AI 智能体技能（skills），共 18 个。每个技能都是一个独立的文件夹，你可以把它交给自己的 AI 智能体（Muse、ChatGPT，或任何能读取 Markdown 文件的智能体）——智能体会按照文件夹里的操作手册，用你自己的账号、你自己的数据、你自己的配置来完成工作。
+这是一套为个人执业和团体执业的心理咨询师准备的、可复用的 AI 智能体技能（skills），共 19 个。每个技能都是一个独立的文件夹，你可以把它交给自己的 AI 智能体（Muse、ChatGPT，或任何能读取 Markdown 文件的智能体）——智能体会按照文件夹里的操作手册，用你自己的账号、你自己的数据、你自己的配置来完成工作。
 
 本仓库不包含任何真实机构的经营数据。每个技能发布前都经过脱敏处理：没有姓名、邮箱、账号 ID、收费标准，也没有任何来访者信息。
 
@@ -54,6 +54,7 @@
 | [Client Tool Publishing Kit](client-tool-publishing-kit/)（来访者工具发布） | 把双语互动来访者工具（练习册、追踪表、心理教育工具）从 zip 文件部署到你自己域名下的 GitHub Pages，挑选无版权问题的封面图，并登记到你的工具索引表格的双语页签中——分享前先核验两个线上链接都可正常打开。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Apps Script Deploy Kit](apps-script-deploy-kit/)（Apps Script 接口部署） | 用你自己的 OAuth 客户端通过 Apps Script 接口部署 Google Apps Script 网页应用，不再往编辑器里粘贴代码：推送准确的文件、回读核对、创建版本、升级**现有**部署（绝不生成新链接），并从线上页面验证。其他工具包的应用都靠它部署。从 `README.md` 或 `PROMPT.md` 开始。 |
 | [Apps Script Build Checklist Kit](apps-script-build-checklist-kit/)（Apps Script 搭建检查清单） | 一份上线前检查清单，收录 Apps Script 在真实运行中最容易出事的缺陷：清单文件里的邮件权限范围、与浏览器全局变量重名的顶层变量、PIN 验证契约不一致、表单部分保存丢数据、用显示名而不是稳定 ID 关联记录、电子表格时区导致时间戳偏移——每项都给出修复方法和最终巡查步骤。从 `README.md` 或 `PROMPT.md` 开始。 |
+| [Muse Backup & Handover](muse-backup-handover/)（Muse 备份与交接） | 一个额外的通用技能，与执业业务无关：把你的 Muse 智能体的人设、记忆和资料打包成 AES-256 加密 ZIP，并通过《恢复手册》和验证问答交接给新的 Muse——新助手答对问题才算交接成功。本技能按其 MIT 许可从上游项目镜像收录（见其 `LICENSE`）。从 `README.md` 开始。 |
 
 ## 如何使用技能
 

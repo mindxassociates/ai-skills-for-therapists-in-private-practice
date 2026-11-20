@@ -1,0 +1,5 @@
+name: "muse-backup-handover"
+title: "Muse 备份与交接"
+description: "把一个 Muse 的人格、记忆和资料备份成 AES-256 加密 ZIP，迁移到新的 Muse 上并验证恢复，交接以验证问答为准。"
+category: "Work and knowledge"
+include_in_prompt: false

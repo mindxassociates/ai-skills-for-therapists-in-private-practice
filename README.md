@@ -2,7 +2,7 @@
 
 English | [中文版](README.zh.md)
 
-A collection of 18 reusable AI-agent skills built for therapists in solo and group private practice. Each skill is a self-contained folder you can hand to your own AI agent (Muse, ChatGPT, or any agent that can read Markdown files) — the agent follows the playbook inside to do the work with your own accounts, your own data, and your own configuration.
+A collection of 19 reusable AI-agent skills built for therapists in solo and group private practice. Each skill is a self-contained folder you can hand to your own AI agent (Muse, ChatGPT, or any agent that can read Markdown files) — the agent follows the playbook inside to do the work with your own accounts, your own data, and your own configuration.
 
 No practice data from any real practice is included. Every skill was scrubbed before publishing: no names, emails, account IDs, fees, or client information.
 
@@ -54,6 +54,7 @@ Then hand the **unzipped folder** (all of its files, including the `references` 
 | [Client Tool Publishing Kit](client-tool-publishing-kit/) | Deploy a bilingual interactive client tool (worksheets, trackers, psychoeducation tools) from a zip to GitHub Pages on your own domain, pick a copyright-free cover photo, and list it in your tools index spreadsheet in both languages — with both live URLs verified before you share them. Start with its `README.md` or `PROMPT.md`. |
 | [Apps Script Deploy Kit](apps-script-deploy-kit/) | Deploy Google Apps Script web apps through the Apps Script API with your own OAuth client instead of pasting code into the editor: push exact files, read back, create a version, bump the *existing* deployment (never mint a new URL), and verify from the served page. The engine room behind the other kits' apps. Start with its `README.md` or `PROMPT.md`. |
 | [Apps Script Build Checklist Kit](apps-script-build-checklist-kit/) | A pre-deploy checklist of the Apps Script defects that actually bite in production: manifest mail scopes, browser-global variable collisions, PIN-gate contract mismatches, forms that lose work on partial save, records joined by display name instead of stable ID, and spreadsheet-timezone timestamp shifts — each with its fix and a final sweep. Start with its `README.md` or `PROMPT.md`. |
+| [Muse Backup & Handover](muse-backup-handover/) | A bonus skill, not practice-specific: back up your Muse agent's persona, memory and files into an AES-256 encrypted zip, and hand it over to a new Muse with a resurrection letter and verification questions the new agent must answer before the handover counts as done. Mirrored here under its MIT license from the upstream project (see its `LICENSE`). Start with its `README.md`. |
 
 ## How to use a skill
 
