@@ -1,0 +1,10 @@
+name: between_sessions_kit
+title: Between Sessions Kit
+description: Build a between-session client homework system for a therapy practice on Google Workspace + Apps Script + Sheets: a bilingual exercise/reminder catalog providers assign from a PIN-gated app, clients who open one personal token link (no accounts), email-only reminders on a 15-minute engine scheduled in the client's timezone with early-submission crediting, a flagged-results review queue, a custom-exercise builder, a nightly reminder watchdog and weekly workbook backups. Use when a colleague in private practice wants client homework, practice exercises and reminders like this instead of a paid homework-platform subscription — with no SMS anywhere.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
