@@ -13,7 +13,6 @@ The catalog is a source JSON file in the project, converted at build time into a
   "descriptionZh": "…",
   "zhStatus": "ZH_AUTHORED",
   "audience": ["Adult", "Youth"],
-  "inPracticeLibrary": true,
   "inRemindLibrary": true,
   "customSteps": [
     { "kind": "text",     "promptEN": "A thought log slows down a difficult moment…", "promptZH": "…" },
@@ -33,7 +32,7 @@ The catalog is a source JSON file in the project, converted at build time into a
 - **gentleNote / gentleNoteZh** (optional) — a short "go gently" note shown before emotionally heavy items (grief writing, trauma work). If the field exists, its translation field must exist too, and the payload must actually carry it — a translated field with no consumer in the code is a silent English leak.
 - **crisisNote: true** (optional) — the item shows the crisis-resources block and every submission flags `REVIEW` for the provider. Safety-plan-type items carry this.
 - **zhStatus** — `ZH_AUTHORED` only when a human has authored the item's second-language fields. Anything else renders the English clinical content inside the second-language UI **with a visible note saying so**. This flag is the honesty mechanism; never flip it for machine output.
-- **inPracticeLibrary / inRemindLibrary** — an item can be practicable in-session, assignable as homework, or both.
+- **inRemindLibrary** — whether the item is offered in the assignment library. Every item is between-session work; there is no in-session library.
 
 ## Steps
 

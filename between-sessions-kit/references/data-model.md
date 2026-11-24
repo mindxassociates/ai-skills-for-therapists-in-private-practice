@@ -14,9 +14,9 @@ Edits are **in place**: name, email, language, timezone, caregiver, notes — Cl
 
 ## Assignments — one provider giving one client one item, with one plan
 
-`AssignmentID` · `ProviderID` · `ClientID` · `CatalogSlug` (catalog slug, or a custom exercise's slug) · `Mode` (`InSession` / `Homework`) · `Status` (`Active` / `Paused` / `Ended` / `Completed`) · `SetupJSON` (item setup chosen at assignment — e.g. safety-plan content, exposure target; validated server-side against the item's setup schema) · `MessageCustom` (provider-edited reminder message; blank = system template) · `RecurrenceJSON` (see `reminder-engine.md`; blank for in-session) · `StartDate` · `EndRule` (`None` / `ByDate` / `AfterOccurrences`) · `EndValue` · `TimesOfDay` (comma list of `HH:mm`, read as wall times **in the client's zone**) · `Timezone` (the client's zone, snapshotted at creation) · `TokenHash` (SHA-256) · `TokenPlain` (restricted-workbook only — see `security-and-privacy.md`) · `CreatedAt` · `LangAtAssign` (snapshot of the client's language at assignment).
+`AssignmentID` · `ProviderID` · `ClientID` · `CatalogSlug` (catalog slug, or a custom exercise's slug) · `Mode` (`Homework` — the only mode) · `Status` (`Active` / `Paused` / `Ended` / `Completed`) · `SetupJSON` (item setup chosen at assignment — e.g. safety-plan content, exposure target; validated server-side against the item's setup schema) · `MessageCustom` (provider-edited reminder message; blank = system template) · `RecurrenceJSON` (see `reminder-engine.md`) · `StartDate` · `EndRule` (`None` / `ByDate` / `AfterOccurrences`) · `EndValue` · `TimesOfDay` (comma list of `HH:mm`, read as wall times **in the client's zone**) · `Timezone` (the client's zone, snapshotted at creation) · `TokenHash` (SHA-256) · `TokenPlain` (restricted-workbook only — see `security-and-privacy.md`) · `CreatedAt` · `LangAtAssign` (snapshot of the client's language at assignment).
 
-In-session practice is an Assignment too (`Mode = InSession`, zero instances).
+The system deliberately has no in-session mode — the practice happens between sessions, so every assignment is homework-mode work with scheduled instances.
 
 ## ReminderInstances — the unit the engine acts on
 
@@ -26,7 +26,7 @@ One row per scheduled send, **materialised ahead** (never computed on the fly at
 
 ## Results — one row per completion
 
-`ResultID` · `AssignmentID` · `InstanceID` (blank for in-session / self-initiated completions) · `ProviderID` · `ClientID` · `CatalogSlug` · `CompletedAt` · `AnswersJSON` (the full step answers) · `ScoreTotal` / `ScoreBand` / `ScoreDetailJSON` (only for scored items; blank otherwise — and blank must survive the trip to the browser as `''`, never `NaN`) · `Flag` (blank / `REVIEW` for crisis-adjacent items) · `DurationSec` (timer items) · `LangUsed` (language the client actually completed in) · `ReviewedAt` · `ReviewedBy` (the reviewed stamp that clears the flag everywhere).
+`ResultID` · `AssignmentID` · `InstanceID` (blank for self-initiated completions) · `ProviderID` · `ClientID` · `CatalogSlug` · `CompletedAt` · `AnswersJSON` (the full step answers) · `ScoreTotal` / `ScoreBand` / `ScoreDetailJSON` (only for scored items; blank otherwise — and blank must survive the trip to the browser as `''`, never `NaN`) · `Flag` (blank / `REVIEW` for crisis-adjacent items) · `DurationSec` (timer items) · `LangUsed` (language the client actually completed in) · `ReviewedAt` · `ReviewedBy` (the reviewed stamp that clears the flag everywhere).
 
 Self-monitoring, sleep-log, and exposure items produce **many** Results per Assignment; one-shot items produce one per credited instance.
 

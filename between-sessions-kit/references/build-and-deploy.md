@@ -4,7 +4,7 @@
 
 1. **Foundation** — workbook with all tabs/headers; catalog source + generator; provider seed. Nothing serves yet; that's fine.
 2. **Server core + gate** — routing, PIN verify + sessions, token resolution, client CRUD.
-3. **Provider app** — dashboard, clients, the 3-step assign wizard (library accordions + live search → client & mode → schedule chips + natural-language summary sentence), reminders summary.
+3. **Provider app** — dashboard, clients, the 3-step assign wizard (library accordions + live search → client → schedule chips + natural-language summary sentence), reminders summary.
 4. **Client app** — renderers per catalog type, completion summary (the client's own answers echoed with their prompts before Submit — clients should see what they're sending), self-guided index, language pill.
 5. **Engine** — materialisation window, 15-minute sender, crediting, bilingual branded email (HTML + plain fallback, same link in both).
 6. **Review + builder** — review views/charts/CSV export, flagged queue + mark-reviewed, custom-exercise builder with a step editor (never a raw-JSON field — providers are clinicians, not developers).
