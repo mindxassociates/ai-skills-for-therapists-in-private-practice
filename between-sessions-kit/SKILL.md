@@ -58,7 +58,7 @@ The **catalog** (exercises + reminders) ships as data generated into the project
 3. Provider app: clients (add / edit / archive / delete-with-cascade), the 3-step assign wizard, reminders summary.
 4. Client app: item renderers (chatbot, journal, self-monitoring, timer, affirmation, custom reminder), self-guided index, language pill.
 5. Reminder engine + triggers + bilingual email templates, per `references/reminder-engine.md`.
-6. Review + flags + export, and the custom-exercise builder (draft → publish → retire; practice-shared option).
+6. Review + flags + export, and the custom-exercise builder (draft → publish → retire, or delete outright while a draft, retired, or never assigned; practice-shared option).
 7. Public pages / embedding (token passthrough), parity check between catalog and public pages.
 8. Hardening + release: transport sweep, watchdog, backups, full test pass per `references/test-checklist.md` — including a **live click-test**, because served-HTML checks do not prove interactive behaviour.
 

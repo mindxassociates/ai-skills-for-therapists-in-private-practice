@@ -26,7 +26,7 @@ One row per scheduled send, **materialised ahead** (never computed on the fly at
 
 ## Results — one row per completion
 
-`ResultID` · `AssignmentID` · `InstanceID` (blank for self-initiated completions) · `ProviderID` · `ClientID` · `CatalogSlug` · `CompletedAt` · `AnswersJSON` (the full step answers) · `ScoreTotal` / `ScoreBand` / `ScoreDetailJSON` (only for scored items; blank otherwise — and blank must survive the trip to the browser as `''`, never `NaN`) · `Flag` (blank / `REVIEW` for crisis-adjacent items) · `DurationSec` (timer items) · `LangUsed` (language the client actually completed in) · `ReviewedAt` · `ReviewedBy` (the reviewed stamp that clears the flag everywhere).
+`ResultID` · `AssignmentID` · `InstanceID` (blank for self-initiated completions) · `ProviderID` · `ClientID` · `CatalogSlug` · `CompletedAt` · `AnswersJSON` (the full step answers) · `ScoreTotal` / `ScoreBand` / `ScoreDetailJSON` (only for scored items; blank otherwise — and blank must survive the trip to the browser as `''`, never `NaN`) · `Flag` (blank / `REVIEW` — set by the system for crisis-adjacent or scored results, or manually when a provider flags any result for review) · `DurationSec` (timer items) · `LangUsed` (language the client actually completed in) · `ReviewedAt` · `ReviewedBy` (the reviewed stamp that clears the flag everywhere).
 
 Self-monitoring, sleep-log, and exposure items produce **many** Results per Assignment; one-shot items produce one per credited instance.
 
