@@ -1,0 +1,10 @@
+name: simple_ehr_kit
+title: Simple EHR Kit
+description: Build a simple private-pay EHR for a solo or small therapy practice on Google Workspace + Apps Script + Sheets: clients, scheduling, a custom note builder with one-click carry-over and sign-and-lock, a token-link client portal with digital intake, PDF superbills, invoices with payment links, email reminders, and per-client data export — with no claims submission, no eligibility checks and no ERA, by design. One installation per practice (sharded, never one shared workbook for many practices), Sheets as the index and Drive for note/document content, yearly archiving and batch/cache discipline so it does not slow down as providers are added.
+include_in_prompt: true
+availability:
+  confidential_vm: true
+  needs_speech: false
+skill_improvement:
+  managed: true
+  needs_review: true
